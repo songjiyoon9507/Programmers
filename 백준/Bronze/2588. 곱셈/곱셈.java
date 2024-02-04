@@ -20,6 +20,7 @@ public class Main {
 		System.out.println(A * (B.charAt(2) - '0') );
 		System.out.println(A * (B.charAt(1) - '0') );
 		System.out.println(A * (B.charAt(0) - '0') );
+		// 문자열을 숫자로 바꿔줌 Integer.parseInt();
 		System.out.println(A * Integer.parseInt(B));
 		
 	}
