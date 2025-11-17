@@ -1,0 +1,20 @@
+class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        String[] arr = s.split(" ");
+        for(int i = 0 ; i < arr.length ; i++) {
+            if(arr[i].equals("Z")) {
+                arr[i-1] = "";
+                arr[i] = "";
+            }
+        }
+        
+        for(String a : arr) {
+            if(!a.equals("")) {
+                answer += Integer.parseInt(a);
+            }
+        }
+
+        return answer;
+    }
+}
